@@ -64,6 +64,8 @@ typedef struct {
 } IMAGE_TUNE_SaveDataFileHeader;
 
 
+// Usage "./rawtiDNG <rawti_file_in> <dng_file_out>"
+
 int main (int argc, char **argv)
 {
 	static const short CFARepeatPatternDim[] = { 2,2 };
@@ -111,7 +113,7 @@ int main (int argc, char **argv)
 	// Skip padding after heading to the raw data
 	fseek(ifp, rawTI.validDataStartOffset, SEEK_SET);
 
-	if (!(tif = TIFFOpen (argv[4], "w"))) goto fail;
+	if (!(tif = TIFFOpen (argv[2], "w"))) goto fail;
 	
 	TIFFSetField (tif, TIFFTAG_SUBFILETYPE, 1);
 	TIFFSetField (tif, TIFFTAG_IMAGEWIDTH, width>>4);
