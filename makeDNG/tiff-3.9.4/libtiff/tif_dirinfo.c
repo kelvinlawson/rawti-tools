@@ -253,6 +253,14 @@ tiffFieldInfo[] = {
       FIELD_CUSTOM,	1,	0,	"MatrixWorldToScreen" },
     { TIFFTAG_PIXAR_MATRIX_WORLDTOCAMERA,	16,16,	TIFF_FLOAT,
        FIELD_CUSTOM,	1,	0,	"MatrixWorldToCamera" },
+	
+	    { TIFFTAG_CFAREPEATPATTERNDIM, 2, 2, TIFF_SHORT,	FIELD_CUSTOM, 
+		      0,	0,	"CFARepeatPatternDim" },
+	    { TIFFTAG_CFAPATTERN,	-1, -1,	TIFF_BYTE,	FIELD_CUSTOM, 
+		      0,	1,	"CFAPattern" },
+	
+	
+	
     { TIFFTAG_COPYRIGHT,	-1, -1,	TIFF_ASCII,	FIELD_CUSTOM,
       1,	0,	"Copyright" },
 /* end Pixar tags */
@@ -299,10 +307,10 @@ tiffFieldInfo[] = {
       0,	1,	"BlackLevelDeltaH" },
     { TIFFTAG_BLACKLEVELDELTAV,	-1, -1,	TIFF_SRATIONAL,	FIELD_CUSTOM, 
       0,	1,	"BlackLevelDeltaV" },
-    { TIFFTAG_WHITELEVEL,	-2, -2,	TIFF_LONG,	FIELD_CUSTOM, 
-      0,	0,	"WhiteLevel" },
-    { TIFFTAG_WHITELEVEL,	-2, -2,	TIFF_SHORT,	FIELD_CUSTOM, 
-      0,	0,	"WhiteLevel" },
+    { TIFFTAG_WHITELEVEL,	-2, -1,	TIFF_LONG,	FIELD_CUSTOM, 
+      0,	1,	"WhiteLevel" },
+    { TIFFTAG_WHITELEVEL,	-2, -1,	TIFF_SHORT,	FIELD_CUSTOM, 
+      0,	1,	"WhiteLevel" },
     { TIFFTAG_DEFAULTSCALE,	2, 2,	TIFF_RATIONAL,	FIELD_CUSTOM, 
       0,	0,	"DefaultScale" },
     { TIFFTAG_BESTQUALITYSCALE,	1, 1,	TIFF_RATIONAL,	FIELD_CUSTOM, 
