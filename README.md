@@ -9,7 +9,7 @@ rawtiDNG
 Converts .rawTI files to Adobe DNG raw format.
 
 Usage:
-    ./rawtiDNG <rawTI_file_in> <dng_file_out>
+    ./rawtiDNG rawTI_file_in dng_file_out
 
 Based on makeDNG from the Field project (http://openendedgroup.com/field)
 with mods to read the rawTI header format. CFA pattern must currently be
