@@ -1,1 +1,1 @@
-gcc -o elphel_dng elphel_dng.c -ltiff
+gcc -o makeDNG makeDNG.c -ltiff
