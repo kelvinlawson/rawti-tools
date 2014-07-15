@@ -18,5 +18,5 @@ edited in the source file rawtiDNG.c
 Build instructions:
 
  * Use standard "configure", "make", "sudo make install" commands in the JPEG
-   and TIFF folders jpeg-8b and tiff-3.9.4.
+   and TIFF folders jpeg-8b and tiff-3.9.4. Follow that up with ldconfig.
  * Use command "./build.sh" in the dng folder to build "rawtiDNG" executable.
